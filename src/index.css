@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#root {
+    height: 100%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.notch-loader {
+    position: fixed;
+    top: 0;
+    left: 50%
+}
+
+.preloader {
+    background: #337ab7;
+    border-radius: 5px;
+    color: #fff;
+    left: 50%;
+    padding-top: 5px;
+    position: fixed;
+    text-align: center;
+    top: -5px;
+    width: 90px;
+    z-index: 6;
+
+    .spinner {
+        font-size: .8em;
+    }
+}
+
+.fixed-menu-item {
+    height: 50px; /* Set your desired fixed height */
+    line-height: 50px; /* Ensures the text is vertically centered */
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+.update-overlay {
+    animation: Animate 20s ease infinite;
+    background: repeating-linear-gradient(-45deg, rgba(225, 225, 225, .1), rgba(6, 38, 153, .1) 50%) top left fixed;
+    background-size: 30px 30px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+@-webkit-keyframes Animate {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+    }
+}
+
+@-moz-keyframes Animate {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+    }
+}
+
+@keyframes Animate {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+    }
+}
